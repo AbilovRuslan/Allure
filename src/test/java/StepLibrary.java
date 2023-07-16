@@ -18,7 +18,7 @@ public class StepLibrary {
 
     @Step("Ищем репозиторий {repo}")
     public void searchForRepository(String repo) {
-        $("search-input").click();
+        $(".search-input").click();
         $("#query-builder-test").sendKeys(repo);
         $("#query-builder-test").submit();
     }
